@@ -1,0 +1,69 @@
+#
+# SatNet MicroPro Calibration File (HyperPro II)
+#
+# MPR s/n 0068 
+ 
+# University of Maine / Project 2004-719
+# Calibrated with HPE 186 & HPL 174
+# Calibration file valid 26 January, 2012
+# Optical data updated by  Jennifer
+# Anciliary data updated by James Foesenek
+# Replaced pressure sensor Keller PAA-33X/30bar/80794.2
+
+INSTRUMENT SATMPR '' 6 AS 0 NONE	# frame sync string
+SN 0068 '' 4 AS 0 NONE			# instrument serial number
+
+DATARATE 57600 'bps' 0 BU 0 NONE	# nominal baud rate
+
+SV-MPR NONE 'Volts' 2 BU 1 POLYU	# sensed supply voltage - 12V nominal
+0 0.03
+
+VA-MPR NONE 'Volts' 2 BU 1 POLYU	# sensed analog voltage - 5V nominal
+0 0.03
+
+V15-MPR NONE 'Volts' 2 BU 1 POLYU	# sensed pressure sensor supply voltage - 15V nominal
+0 0.03
+
+TEMP-MPR PCB 'Celsius' 2 BU 1 POLYU	# internal temperature measurement
+-50.0 0.5
+
+
+AUX 1 '' 2 BU 0 NONE			# Spare channel
+
+
+# Ocean Sensors CT probe 
+# calibrated 06/30/04 by   James Foesenek 
+# Processed by  James Foesenek 
+COND NONE 'mmho/cm' 2 BU 1 POLYU
+-6.751393490e+004 8.817714122e+000 -4.791495597e-004 1.385837836e-008 -2.249178608e-013 1.942191100e-018 -6.971375294e-024
+
+
+AUX 3 '' 2 BU 0 NONE			# Spare channel
+
+# Keller 300 psi transducer PAA-33X/30bar/80794.2 s/n 147922
+# Replacement pressure sensor Jan 26 2012
+Pres none 'm' 2 BU 1 POLYF
+0.009082490	32768
+
+# Applied Geomechanics Tilt Sensor Model N7356
+# Tilts by James Foesenek June 21 2004
+# calibrated to +-20deg by James Foesenek
+TILT X '' 2 BU 1 POLYU			# X axis tilt
+4.8617694e+001 -1.4622918e-003 -7.3622385e-010
+TILT Y '' 2 BU 1 POLYU			# Y axis tilt
+-4.6491838e+001 1.3904688e-003 1.4933737e-009
+TEMP TILT '' 2 BU 0 COUNT		# Temperature of tilt sensor
+
+# SATCAL THERMAL June 30 2004
+# Calibrated 0-40 deg by  James Foesenek
+# Processed by  James Foesenek
+T w 'C' 2 BU 1 POLYU
+1.174939493e+003 -1.561087078e-001 9.431547338e-006 -3.132624512e-010 5.910107001e-015 -5.967736668e-020 2.503583645e-025
+
+FRAME NONE '' 1 BU 0 COUNT
+
+TIMER NONE 'sec' 10 AF 0 COUNT
+
+CHECK SUM '' 1 BU 0 COUNT
+
+TERMINATOR NONE '' 2 AS 0 NONE

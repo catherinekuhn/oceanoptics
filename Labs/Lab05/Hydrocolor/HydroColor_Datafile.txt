@@ -1,0 +1,2 @@
+Date Time Name Lat Lon GPS_Accuracy(m) Sun_Zenith Sun_Azimuth Water_Pitch Water_Heading Water_Exposure Water_Bv Water_ISO Sky_Pitch Sky_Heading Sky_Exposure Sky_Bv Sky_ISO Card_Pitch Card_Heading Card_Exposure Card_Bv Card_ISO Reflec_Red(1/sr) Reflec_Green(1/sr) Reflec_Blue(1/sr) Turbidity(NTU) [SPM](g/m^3) Backscatter_Red(1/m) 
+07172017 142615 KuhnDMRDock 43.93399 -69.5794 10 59.2 246.6 39.9 110.0 0.001443 8.971 25 129.3 110.1 0.000494 10.844 25 38.7 112.2 0.000598 11.120 25 0.007±0.001 0.012±0.002 0.008±0.001 5±2 5±2 0.05±0.02 

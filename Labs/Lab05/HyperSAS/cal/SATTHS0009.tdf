@@ -1,0 +1,103 @@
+#########################################################################################
+# Telemetry Definition File:
+#
+# Type: Satlantic Tilt/Heading Sensor
+# Description: Uses AOSI EZ-COMPASS-3V
+# Project: 2007-731 University of Maine
+#
+# Notes:	
+#	The EZ-COMPASS-3V can be configured for a variety of output formats.
+#	THis tdf file uses the compass TTCM mode with all sensors enabled.  
+#
+#	Satlantic hardware provides full SatNet master capability.
+#	 
+#
+# Creation Date: October 29, 2003
+# Author: Scott Feener
+#
+# History:
+#	2003-10-29, SF: Template created
+#	2005-06-29, DA: Updated for sn0005 for 2005-709
+#
+#########################################################################################
+
+#
+# Instrument specific header and SN, attached by Profiler II
+#     Note: replace 'xxxx' with instrument SN
+VLF_INSTRUMENT SATTHS0009 '' 10 AS 0 NONE
+
+#
+# Frame Counter
+#
+FIELD NONE ',' 1 AS 0 DELIMITER
+FRAME COUNTER '' V AI 0 COUNT
+
+#
+# Timer field - Time since commencement of normal operation
+#
+FIELD NONE ',' 1 AS 0 DELIMITER
+TIMER NONE 'sec' V AF 0 COUNT
+
+#
+# Comma separator
+#
+FIELD NONE ',' 1 AS 0 DELIMITER
+
+#
+# Start of sensor data ($ character)
+#
+START NONE '' V AS 0 NONE
+
+#
+# Roll data
+#
+FIELD NONE 'R' 1 AS 0 DELIMITER
+ROLL NONE 'deg' V AF 0 COUNT
+
+#
+# Pitch data
+#
+FIELD NONE 'P' 1 AS 0 DELIMITER
+PITCH NONE 'deg' V AF 0 COUNT
+
+#
+# Internal Temperature data
+#
+FIELD NONE 'T' 1 AS 0 DELIMITER
+TEMP PCB 'Celsius' V AF 0 COUNT
+
+#
+# Magnetic Field - x component
+#
+FIELD NONE 'X' 1 AS 0 DELIMITER
+MAG X 'mGauss' V AF 0 COUNT
+
+#
+# Magnetic Field - y component
+#
+FIELD NONE 'Y' 1 AS 0 DELIMITER
+MAG Y 'mGauss' V AF 0 COUNT
+
+#
+# Magnetic Field - z component
+#
+FIELD NONE 'Z' 1 AS 0 DELIMITER
+MAG Z 'mGauss' V AF 0 COUNT
+
+#
+# Compass heading
+#
+FIELD NONE 'C' 1 AS 0 DELIMITER
+COMP NONE 'deg' V AF 0 COUNT
+
+#
+# AOSI checksum and carriage return and line feed - do not display
+#
+FIELD NONE '\x2A' 1 AS 0 DELIMITER
+EXTRA NONE '' V AS 0 NONE 
+
+TERMINATOR NONE '\x0D\x0A' 2 AS 0 DELIMITER
+
+#
+# end of AOSI data
+#
